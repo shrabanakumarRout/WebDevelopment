@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decendent Selector</title>
+</head>
+<style>
+     div>h1 /*child selector only for direct chains */
+    {
+        background-color: blueviolet;
+        color: skyblue;
+        display: inline;
+       
+    }
+    body h2{  /* descendent selector for direct and indirect chain */
+        background-color: blueviolet;
+        color: yellow;
+        display: inline;
+        margin-bottom: 100px;
+
+    }
+</style>
+<body>
+    <div>
+    <h1 class="abc">h1 header name in abc</h1>
+    <div>
+    <br>
+    <h2 class="abc xyz">h2 header name in abcxyz class name</h2>
+</body>
+</html>

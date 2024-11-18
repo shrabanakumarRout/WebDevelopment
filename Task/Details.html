@@ -4,16 +4,42 @@
    
     <title>Details form</title>
 </head>
-<body>
-
-    <form action="">
+<style>
+        legend
+        {
+            text-align: center;
+            background-color:black;
+            color:white;
+            padding:5px 10px;
+            border-radius: 0px 20px;
+        }
+        fieldset
+        {
+            background-color:lightgreen;
+            width:350px;
+            padding-left: 10px;
+            margin-left:550px;
+        }
+        button
+        {
+            font-weight: bold;
+        }
+        button:hover
+        {
+            background-color:red;
+        }
+    
         
+</style>
+<body>
+    <form action="">
         <fieldset>
-        <table align = "center">
-         <P align = "center">Details form</P>
+        
+         <legend>Details Form</legend>
+         <table width = "">
          <tr>
            <td>FirstName:</td>
-            <td><input type="text"placeholder = "Enter firstname"></td>
+           <td><input type="text"placeholder = "Enter firstname"></td>
         </tr>     
         <tr>
             <td>LastName:</td>
@@ -21,7 +47,7 @@
          </tr>        
          <tr>
             <td>Email:</td>
-             <td><input type="text"placeholder = "Enter Your Email"></td>
+             <td><input type="text"placeholder = "Enter Your mail"></td>
          </tr>
 
          <tr>
@@ -29,56 +55,47 @@
              <td><input type="password"></td>
          </tr>
          <tr>
-            <td>Gender:</td>
-             <td>
-                <label for="">
-                    <input type="checkbox" name="male">Male
-                </label>
-             
-                <label for="">
-                    <input type="checkbox">Female
-                </label>
-                <label for="">
-                    <input type="checkbox">Others
-                </label>
+            <td> <label for="">Gender:</label></td>
+            <td><input type="radio" name="radio">Male
+                <input type="c" name="radio">Female
+                <input type="radio" name = "radio">Others
              </td>
-             </td>
+         </tr>
+         <tr>
+            <td>
+                <label for="">Mobile NO</label></td>
+              <td><input type="number"></td>
+         </tr>
+         <tr>
+            <td><label for="">State:</label></td>
+            <td><select name="" id="">
+                <option value="">....Select....</option>
+                <option value="">Andhra Pradesh</option>
+                <option value="">Bihar</option>
+                <option value="">Chhatisgarh</option>
+                <option value="">Karnataka</option>
+                <option value="">Tamilnadu</option>
+                <option value="">Odisha</option>
+            </select></td>
+         </tr>
              <tr>
-             <td>age:</td>
-             <td><input type="text"></td>
+             <td>DOB:</td>
+             <td><input type="date"></td>
             </tr>
             <tr>
-                <td>preference:</td>
                 <td>
-                <label for="">
-                    <input type="checkbox">Java
-                </label>
-                <label for="">
-                    <input type="checkbox">Python
-                </label>
-                <label for="">
-                    <input type="checkbox" >Mernstack
-                </label>
-            </td>
+                    <label for="">AdharCard No:</label></td>
+                    <td><input type=""></td>
             </tr>
-            <tr><td>
-                Occupation:
-            </td>
+            <tr><td>Occupation:</td>
             <td><input type="text"></td>
-              </tr>
-        
             </tr>
-        
-            <tr>
-                <td>
-                    <button>Submit</button>
-                </td>
+                <tr>
+                <td colspan="6" align="center"><button>Submit</button></td>
             </tr>
         </table>
     </fieldset>
     </form>
-    <Style>
-     
-    </Style>
+   
 </body>
 </html>

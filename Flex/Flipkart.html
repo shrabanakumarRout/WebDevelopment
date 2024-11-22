@@ -3,64 +3,118 @@
 <head>
     <title>Flex</title>
     <style>
-        
+        *{
+            margin: 0px;
+            
+        }
         img
         {
-            width:px;
+            width:80px;
             height:60px;
+            border-radius: 10px;
         }
+      .img2
+      {
+         width: 180px;
+
+         
+      }
        .container
        {
-        display:flex;
-        flex-direction: row;
-        gap: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        padding:20px;
+        background-color:whitesmoke;
+        margin: 10px;
         text-align: center;
-        justify-content: space-between;
-        background-color:beige;
-       
        }
+      nav
+      {
+        display: flex;
+        justify-content: space-around;
+        background-color: whitesmoke;
+        padding: 10px;
+        column-gap: 50px;
+        align-items: center;
+      }
+    .child>button
+   {
+    padding: 6px 20px;
+    font-size: 17px;
+    color: blue;
+   }
+   input{
+    width:300px;
+    background-color: aliceblue;
+    border: none;padding: 16px;
+   }
+     
+      
     </style>
 </head>
 <body>
+    <nav>
+        <div>
+            <img class="img2" src="../html/Images/Flipkartlogo.svg" alt="FlipkartLogo">
+            </div>
+        <div class="child">
+            <input type="search"placeholder="Search for Products & more">
+        </div>
+        <div class="child">
+            <button>Login</button>
+        </div>
+        <div class="child">
+            Become a Seller
+        </div>
+        <div class="child">
+            More
+        </div>
+        <div class="child">
+            Cart
+        </div> 
+     </nav> 
+
     <div class="container">
         <div class="items">
-            <img src="../html/Images/Grocery.jpg"alt="">
+            <img src="../html/Images/Grocery.jpg"alt="Grocery">
             <h4>Grocery</h4>
         </div>
         <div class="items">
-            <img src="../html/Images/Fashion.jpg" alt="">
+            <img src="../html/Images/Fashion.jpg" alt="Fashion">
             <h4>Fashion</h4>
         </div>
         <div class="items">
-            <img src="../html/Images/Mobile.jpg" alt="">
+            <img src="../html/Images/Mobile.jpg" alt="MObiles">
             <h4>Mobiles</h4>
         </div>
         <div class="items">
-            <img src="../html/Images/Electronics.jpg" alt="">
+            <img src="../html/Images/Electronics.jpg" alt="Electronics">
             <h4>Electronics</h4>
         </div>
         <div class="items">
-            <img src="../html/Images/Home&Furniture.jpg" alt="">
+            <img src="../html/Images/Home&Furniture.jpg" alt="Home&Furniture">
             <h4>Home&Furniture</h4>
         </div>
         <div class="items">
-            <img src="../html/Images/Appliances.jpg" alt="">
+            <img src="../html/Images/Appliances.jpg" alt="Appliances">
             <h4>Appliances</h4>
         </div>
         <div class="items">
-            <img src="../html/Images/FlightBookings.jpg" alt="">
+            <img src="../html/Images/FlightBookings.jpg" alt="Flight">
             <h4>FlightBookings</h4>
             </div>
             <div class="items">
-                <img src="../html/Images/Gift.jpg" alt="">
+                <img src="../html/Images/Gift.jpg" alt="Toys">
                 <h4>Beautytoys&More</h4>
             </div>
             <div class="items">
-                <img src="../html/Images/Twowheelers.jpg" alt="">
+                <img src="../html/Images/Twowheelers.jpg" alt="Bikes">
                 <h4>Bikes</h4>
             </div>
         </div>
         
     </div>
+
+   
 </body>
 </html>
